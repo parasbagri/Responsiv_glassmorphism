@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+     
+} 
+html body {
+     width: 100vw;
+     height: 100vh;
+     background: rgb(180, 58, 97);
+     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(212, 177, 126) 50%, rgba(252,176,69,1) 100%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+  
+}  
+.conatner{
+     width: 74%;
+     height: 80%;
+     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+     background: rgb(63,94,251);
+     background: radial-gradient(circle, rgba(63,94,251,0.3) 0%, rgba(252,70,107,0.3) 100%);
+     padding: 30px;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+    
+} 
+.conatner .nav-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}  
+.conatner .nav-bar .with_ke_liye{
+     /* border: 2px solid black; */
+     width: 95%;
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+} 
+.lists{
+     display: flex;
+     gap: 10px;
+     & li{
+         list-style-type: none;
+     }
+} 
+a{
+     text-decoration: none;
+     color: white;
+}  
+.btn{
+     padding: 0.3rem 1rem;
+     border: none;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     font-weight: 600;
+     background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+}
+ .para-2{
+    position:relative;
+    top: 240px;
+    left: 800px;
+   
+ }
+ .para-2::before{
+     content: "";
+     width: 100px;
+     height: 1px;
+     position: absolute;
+     top:0;
+     left: 10px;
+     background-color: black;
+ }
+.section1{
+     margin-top:100px;
+     margin-left: 10px;
+}
+@media only screen and (max-width: 844px){
+    
+    html body{
+         flex-wrap: wrap;
+    }
+    .conatner .nav-bar .with_ke_liye{
+         flex-wrap: wrap;
+        
+    }
+    .buttons{
+        margin-top:10px ;
+    }
+    .conatner{
+        width: 90%;
+        height: 90%;
+       
+   } 
+
+}
+@media only screen and (max-width: 410px){
+    .conatner{
+         width: 100%;
+         height: 100%;
+    } 
+    .conatner .nav-bar{
+         height: auto;
+    } 
+    .conatner .nav-bar .with_ke_liye{
+         flex-direction: column;
+         gap: 20px;
+    }
+    
+}  
+
